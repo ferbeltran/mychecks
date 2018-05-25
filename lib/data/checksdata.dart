@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+import '../models/check.dart';
+
+final List<Check> checks = [
+    Check(
+      headerIcon: Icons.signal_cellular_4_bar,
+      titleText: 'Wilson Produce',
+      cornerIcon: Icons.spa,
+      amount: '\$13,897.00',
+      date: '23.05.2018',
+      status: 'Completed',
+      headerIconColor: Colors.deepOrange,
+      headerIconTextColor: Colors.white,
+      cornerIconColor: Colors.black26,
+    ),
+    Check(
+      headerIcon: Icons.wb_sunny,
+      titleText: 'Sunfed',
+      cornerIcon: Icons.brightness_1,
+      amount: '\$3,857.00',
+      date: '22.05.2018',
+      status: 'Pending',
+      headerIconColor: Colors.black,
+      headerIconTextColor: Colors.yellow,
+      cornerIconColor: Colors.blue,
+    ),
+    Check(
+      headerIcon: Icons.brightness_2,
+      titleText: 'Trufresh',
+      cornerIcon: Icons.timelapse,
+      amount: '\$13,897.00',
+      date: '23.05.2018',
+      status: 'Completed',
+      headerIconColor: Colors.redAccent,
+      headerIconTextColor: Colors.black,
+      cornerIconColor: Colors.green,
+    ),
+    Check(
+      headerIcon: Icons.view_week,
+      titleText: 'Papayas & More',
+      cornerIcon: Icons.arrow_drop_down_circle,
+      amount: '\$8,835.00',
+      date: '23.05.2018',
+      status: 'Completed',
+      headerIconColor: Colors.white30,
+      headerIconTextColor: Colors.black,
+      cornerIconColor: Colors.blue,
+    ),
+    Check(
+      headerIcon: Icons.adb,
+      titleText: 'Ruby J. Farms',
+      cornerIcon: Icons.blur_on,
+      amount: '\$10,565.00',
+      date: '22.05.2018',
+      status: 'Pending',
+      headerIconColor: Colors.blue,
+      headerIconTextColor: Colors.white,
+      cornerIconColor: Colors.redAccent,
+    )
+  ];

@@ -50,9 +50,11 @@ class _TabsPageState extends State<TabsPage>
       appBar: AppBar(
         actions: <Widget>[
           new IconButton(
-            icon: new Icon(Icons.description),
+            icon: new Icon(Icons.info),
             color: Theme.of(context).primaryColor,
-            onPressed: () {},
+            onPressed: () {
+              showAboutDialog(context: context, applicationIcon: Icon(Icons.insert_chart), applicationLegalese: 'Muajaja');
+            },
           ),
           new IconButton(
             icon: new Icon(Icons.add_box),
@@ -77,7 +79,7 @@ class _TabsPageState extends State<TabsPage>
           BlankPage(),
           BlankPage(),
           BlankPage(),
-          BlankPage(),
+          BlankPage(img: AssetImage('img/meme.jpg')),
         ],
         controller: tabController,
       ),

@@ -10,15 +10,16 @@ class CardItem extends StatelessWidget {
   @override
   Widget build(BuildContext build) {
     return new Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: new Material(
+      padding: const EdgeInsets.all(6.0),
+      child: new Card(
+        
         shape: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(12.0))),
         elevation: 8.0,
         child: new Column(
           children: <Widget>[
             new Padding(
-              padding: const EdgeInsets.all(18.0),
+              padding: const EdgeInsets.all(14.0),
               child: Row(
                 children: <Widget>[
                   CircleAvatar(
@@ -47,7 +48,7 @@ class CardItem extends StatelessWidget {
               ),
             ),
             new Padding(
-              padding: const EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 18.0),
+              padding: const EdgeInsets.fromLTRB(14.0, 0.0, 14.0, 14.0),
               child: Row(
                 children: <Widget>[
                   Column(
@@ -103,6 +104,7 @@ class CardItem extends StatelessWidget {
                 ],
               ),
             ),
+
           ],
         ),
       ),

@@ -83,29 +83,31 @@ class _TabsPageState extends State<TabsPage>
         ],
         controller: tabController,
       ),
-      bottomNavigationBar: Material(
-        color: Colors.white,
-        child: TabBar(
-          controller: tabController,
-          labelColor: Colors.blue,
-          unselectedLabelColor: Colors.black26,
-          tabs: <Widget>[
-            Tab(
-              icon: Icon(Icons.dashboard),
-            ),
-            Tab(
-              icon: Icon(Icons.adjust),
-            ),
-            Tab(
-              icon: Icon(Icons.cloud),
-            ),
-            Tab(
-              icon: Icon(Icons.person),
-            ),
-            Tab(
-              icon: Icon(Icons.settings),
-            ),
-          ],
+      bottomNavigationBar: SafeArea(
+              child: Material(
+          color: Colors.white,
+          child: TabBar(
+            controller: tabController,
+            labelColor: Colors.blue,
+            unselectedLabelColor: Colors.black26,
+            tabs: <Widget>[
+              Tab(
+                icon: Icon(Icons.dashboard),
+              ),
+              Tab(
+                icon: Icon(Icons.adjust),
+              ),
+              Tab(
+                icon: Icon(Icons.cloud),
+              ),
+              Tab(
+                icon: Icon(Icons.person),
+              ),
+              Tab(
+                icon: Icon(Icons.settings),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -22,30 +22,21 @@ class MyCheck extends StatelessWidget {
         backgroundColor: Colors.blue,
         elevation: 0.0,
       ),
-      body: Stack(
-        fit: StackFit.loose,
+      body: Stack(children: <Widget>[
+        Container(
+          height: 100.0,
+          width: double.infinity,
+          color: Colors.blue,
+        ),
+        ListView(
         children: <Widget>[
-          // The containers in the background
-          new Column(
-          
-            children: <Widget>[
-              new Container(
-                height: 150.0,
-                color: Colors.blue,
-              ),
-            ],
+          Hero(
+            child: CardItem(check: cheque),
+            tag: cheque.titleText,
           ),
-           new Column(
-             mainAxisSize: MainAxisSize.min,
-             children: <Widget>[
-               new Hero(
-                  tag: cheque.titleText,
-                  child: CardItem(check: cheque),
-                ),
-             ],
-           ), 
         ],
       ),
+      ],)
     );
   }
 }

@@ -2,17 +2,15 @@ import 'package:flutter/material.dart';
 import '../models/check.dart';
 
 class CardItem extends StatelessWidget {
- 
   final Check check;
 
   CardItem({this.check});
 
   @override
   Widget build(BuildContext build) {
-    return new Padding(
+    return Padding(
       padding: const EdgeInsets.all(6.0),
       child: new Card(
-        
         shape: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(12.0))),
         elevation: 8.0,
